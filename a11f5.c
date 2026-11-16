@@ -25,7 +25,7 @@ double TEMPS[10][3];
     navg = sumall/30;
 printf("%.1f \n", navg);
 for (i=0; i<10; i++){
-  AP[i]= fabs(TEMPS[i][1]-navg);
+  AP[i]= fabs(TEMPS[i][0]-navg);
   for (j=1; j<3; j++) {
     if (fabs(TEMPS[i][j]-navg)>AP[i])
         AP[i]= fabs(TEMPS[i][j]-navg);
